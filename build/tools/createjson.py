@@ -17,7 +17,7 @@ def generate_json(target_device, product_out, file_name, build_variant, with_gms
 
     channel = "15_vanilla" if with_gms == "false" else "15"
 
-    existing_ota_json = os.path.join(f"./xtended/OTA{'-VANILLA' if with_gms == 'false' else ''}/builds", f"{target_device}.json")
+    existing_ota_json = os.path.join(f"./evolution/OTA{'-VANILLA' if with_gms == 'false' else ''}/builds", f"{target_device}.json")
 
     maintainer, oem, device, forum, firmware, paypal, telegram, github, initial_installation_images = "", "", "", "", "", "", "", "", []
 
@@ -113,3 +113,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
