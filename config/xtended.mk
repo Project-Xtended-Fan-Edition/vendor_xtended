@@ -1,7 +1,8 @@
 # Project Xtended packages
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace
+    GameSpace \
+    OmniStyle
 
 # BtHelper
 PRODUCT_PACKAGES += \
