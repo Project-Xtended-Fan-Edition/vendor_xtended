@@ -3,6 +3,10 @@ PRODUCT_PACKAGES += \
     EvoEgg \
     GameSpace
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 ifeq ($(XTENDED_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
     Updater
