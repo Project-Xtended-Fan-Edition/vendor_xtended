@@ -250,6 +250,11 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay
 
+#Omni
+PRODUCT_PACKAGES += \
+    OmniJaws \
+    OmniStyle
+
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
