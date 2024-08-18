@@ -6,7 +6,11 @@ XTENDED_VERSION := 10.3
 XTENDED_BUILD_TYPE ?= Unofficial
 
 # Internal version
+ifeq ($(WITH_GMS),true)
 LINEAGE_VERSION := Project-Xtended-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(XTENDED_VERSION)-$(XTENDED_BUILD_TYPE)
+else
+LINEAGE_VERSION := Project-Xtended-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(XTENDED_VERSION)-Vanilla-$(XTENDED_BUILD_TYPE)
+endif
 
 # Display version
 LINEAGE_DISPLAY_VERSION := v$(XTENDED_VERSION)-$(shell date +%Y%m%d)
