@@ -1,6 +1,7 @@
 # Project Xtended packages
 PRODUCT_PACKAGES += \
-    EvoEgg
+    EvoEgg \
+    GameSpace
 
 ifeq ($(XTENDED_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
