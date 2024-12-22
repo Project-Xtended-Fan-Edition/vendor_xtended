@@ -11,3 +11,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 endif
 
 include vendor/lineage/config/BoardConfigSoong.mk
+
+# Parasite vendor configurations
+include vendor/parasite/common/BoardConfig.mk

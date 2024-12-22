@@ -1,6 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# Parasite Configurations
+$(call inherit-product, vendor/parasite/common/config.mk)
+
 PRODUCT_BRAND ?= LineageOS
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -119,8 +122,8 @@ PRODUCT_PACKAGES += \
     bootanimation.zip
 
 # Build Manifest
-PRODUCT_PACKAGES += \
-    build-manifest
+# PRODUCT_PACKAGES += \
+#     build-manifest
 
 # Lineage packages
 ifeq ($(PRODUCT_IS_ATV),)
@@ -263,7 +266,4 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 include vendor/lineage/config/version.mk
 
--include vendor/lineage-priv/keys/keys.mk
-
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/lineage/config/partner_gms.mk
