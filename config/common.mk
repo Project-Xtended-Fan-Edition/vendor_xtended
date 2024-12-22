@@ -6,13 +6,13 @@ $(call inherit-product, vendor/parasite/common/config.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
-ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=android-google
-else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-endif
+# ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
+# PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#     ro.com.google.clientidbase=android-google
+# else
+# PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
+# endif
 
 ifeq ($(PRODUCT_IS_ATV),true)
 ifeq ($(PRODUCT_ATV_CLIENTID_BASE),)
@@ -118,8 +118,8 @@ endif
 # Bootanimation
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
-PRODUCT_PACKAGES += \
-    bootanimation.zip
+# PRODUCT_PACKAGES += \
+#     bootanimation.zip
 
 # Build Manifest
 # PRODUCT_PACKAGES += \
@@ -147,8 +147,8 @@ PRODUCT_COPY_FILES += \
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
     SimpleSettingsConfig
+#    SimpleDeviceConfig \
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
