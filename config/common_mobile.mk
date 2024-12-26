@@ -9,9 +9,9 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 # include vendor/lineage/config/lineage_audio.mk
 
 # Default notification/alarm sounds
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+# PRODUCT_PRODUCT_PROPERTIES += \
+#    ro.config.notification_sound=Argon.ogg \
+#    ro.config.alarm_alert=Hassium.ogg
 
 # Apps
 PRODUCT_PACKAGES += \
