@@ -12,5 +12,5 @@ endif
 
 include vendor/lineage/config/BoardConfigSoong.mk
 
-# Parasite vendor configurations
-include vendor/parasite/common/BoardConfig.mk
+# Project-Xtended vendor configurations
+include vendor/everest/common/BoardConfig.mk
