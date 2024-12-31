@@ -20,4 +20,5 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.xtended.build.version=$(LINEAGE_VERSION) \
     ro.xtended.display.version=$(LINEAGE_DISPLAY_VERSION) \
     ro.xtended.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(XTENDED_VERSION)
+    ro.modversion=$(XTENDED_VERSION) \
+    ro.xtended.maintainer=$(XTENDED_MAINTAINER)
