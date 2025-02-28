@@ -2,7 +2,7 @@ PRODUCT_VERSION_MAJOR = 15
 PRODUCT_VERSION_MINOR = 0
 
 # Increase Xtended Version with each major release.
-XTENDED_VERSION := 10.3
+XTENDED_VERSION := 13.0
 XTENDED_BUILD_TYPE ?= Unofficial
 
 # Internal version
